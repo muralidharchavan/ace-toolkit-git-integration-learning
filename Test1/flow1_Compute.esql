@@ -1,0 +1,10 @@
+
+
+CREATE COMPUTE MODULE flow1_Compute
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		SET OutputRoot.JSON.Data.name = 'response';
+		RETURN TRUE;
+	END;
+
+END MODULE;
